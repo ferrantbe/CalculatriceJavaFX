@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="300" prefWidth="300" spacing="10" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/21" fx:controller="be.ephec.calculatrice.Controller">
+    <fx:define><Font fx:id="FONT" size="18" /></fx:define>
+    <StackPane alignment="CENTER">
+        <Rectangle fill="lightgray" height="50" width="250"/>
+        <Text fx:id="output" text="0"  font="$FONT"/>
+    </StackPane>
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefHeight="50" prefWidth="50" text="7" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="8" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="9" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text=":" onAction="#processOperator" font="$FONT"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefHeight="50" prefWidth="50" text="4" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="5" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="6" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="x" onAction="#processOperator" font="$FONT"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefHeight="50" prefWidth="50" text="1" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="2" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="3" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="-" onAction="#processOperator" font="$FONT"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefHeight="50" prefWidth="110" text="0" onAction="#processNumber" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="=" onAction="#processOperator" font="$FONT"/>
+        <Button prefHeight="50" prefWidth="50" text="+" onAction="#processOperator" font="$FONT"/>
+    </HBox>
+</VBox>
